@@ -1,0 +1,15 @@
+uuid: 93559512-8309-4e5f-9dad-c01ac68b461f
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.visited
+  module:
+    - flag
+id: flag_action.visited_flag
+label: 'Mark as Visited'
+type: node
+plugin: 'flag_action:visited_flag'
+configuration:
+  flag_id: visited
+  flag_action: flag

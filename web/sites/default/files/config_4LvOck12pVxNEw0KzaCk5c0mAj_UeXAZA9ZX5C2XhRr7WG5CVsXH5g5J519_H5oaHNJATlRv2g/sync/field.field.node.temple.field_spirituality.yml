@@ -1,0 +1,29 @@
+uuid: ec67c112-74e0-4a7d-858d-735ee7b6e44b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spirituality
+    - node.type.temple
+    - taxonomy.vocabulary.spiritual_tradition
+id: node.temple.field_spirituality
+field_name: field_spirituality
+entity_type: node
+bundle: temple
+label: 'Spiritual Tradition'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      spiritual_tradition: spiritual_tradition
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

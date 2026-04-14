@@ -1,0 +1,29 @@
+uuid: 785ca46c-40c1-4907-8224-6ebf1e9b5aef
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.tl
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: tl
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:tl'
+settings:
+  id: 'facet_block:tl'
+  label: 'All location'
+  provider: facets
+  label_display: visible
+  block_id: tl
+visibility:
+  request_path:
+    id: request_path
+    pages: /temple-search
+    negate: false
+    context_mapping: {  }

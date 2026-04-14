@@ -1,0 +1,15 @@
+uuid: 98bec54c-f56e-4620-87ba-1260e2c6f2db
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.visited
+  module:
+    - flag
+id: flag_action.visited_unflag
+label: 'Mark as Not Visited'
+type: node
+plugin: 'flag_action:visited_unflag'
+configuration:
+  flag_id: visited
+  flag_action: unflag

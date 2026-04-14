@@ -1,0 +1,29 @@
+uuid: 9b9eaea8-8f2a-45e4-aa6e-c87d55052f81
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sp
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: spiritualtradition
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:sp'
+settings:
+  id: 'facet_block:sp'
+  label: 'Spiritual Tradition'
+  provider: facets
+  label_display: visible
+  block_id: spiritualtradition
+visibility:
+  request_path:
+    id: request_path
+    pages: /temple-search
+    negate: false
+    context_mapping: {  }

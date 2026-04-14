@@ -1,0 +1,8 @@
+uuid: bf4f24e5-dec8-4ab3-8ca7-91144dde8753
+langcode: en
+status: true
+dependencies: {  }
+name: 'Spiritual Tradition'
+vid: spiritual_tradition
+description: ''
+weight: 0

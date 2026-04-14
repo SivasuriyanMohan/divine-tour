@@ -1,0 +1,7 @@
+temple.form:
+  path: '/suggest-temple'
+  defaults:
+    _form: '\Drupal\temple\Form\TempleSubmissionForm'
+    _title: 'Suggest a Temple'
+  requirements:
+    _permission: 'access content'

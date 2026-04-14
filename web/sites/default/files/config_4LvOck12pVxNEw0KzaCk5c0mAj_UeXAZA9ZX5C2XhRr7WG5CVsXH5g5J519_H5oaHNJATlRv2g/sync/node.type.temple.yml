@@ -1,0 +1,17 @@
+uuid: ebc4f88a-63e3-4b9f-b861-ade967e62151
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Temple
+type: temple
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

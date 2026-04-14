@@ -1,0 +1,30 @@
+uuid: 2b44410f-9ba6-4775-ade0-f962f92b79ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: favorite
+label: Favorite
+bundles:
+  - temple
+entity_type: node
+global: false
+weight: 0
+flag_short: 'Add to Favorite'
+flag_long: ''
+flag_message: Added
+unflag_short: 'Remove from Favorite'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

@@ -1,0 +1,87 @@
+uuid: 475c8081-7715-447d-98ac-72302305d87c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spirituality
+    - field.storage.node.field_templelocation
+    - search_api.server.temple_server
+  module:
+    - search_api
+    - node
+id: temple_index
+name: 'Temple Index'
+description: ''
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+  field_spirituality:
+    label: 'Spiritual Tradition'
+    datasource_id: 'entity:node'
+    property_path: field_spirituality
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_spirituality
+  field_templelocation:
+    label: 'temple location'
+    datasource_id: 'entity:node'
+    property_path: field_templelocation
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_templelocation
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - temple
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  html_filter:
+    fields: {  }
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+      em: 1
+      u: 1
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  rendered_item: {  }
+  stemmer:
+    fields: {  }
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  tokenizer:
+    fields: {  }
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+tracker_settings:
+  default: {  }
+options:
+  index_directly: true
+  cron_limit: 50
+server: temple_server

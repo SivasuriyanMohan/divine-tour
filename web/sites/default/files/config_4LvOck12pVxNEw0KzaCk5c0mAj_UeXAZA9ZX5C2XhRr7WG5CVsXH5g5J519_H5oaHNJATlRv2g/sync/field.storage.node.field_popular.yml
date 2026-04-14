@@ -1,0 +1,20 @@
+uuid: 957a451d-93c7-4a89-a594-55281ba0b5ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_popular
+field_name: field_popular
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+uuid: e0b723ff-1fbe-478e-8310-229661b1e6be
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: temple_server
+name: 'Temple Server'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  partial_matches: true
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

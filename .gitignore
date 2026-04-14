@@ -1,0 +1,6 @@
+/vender/
+/node_modules/
+/sites/default/files/
+/sites/default/settings.php
+/.env
+/settings.php

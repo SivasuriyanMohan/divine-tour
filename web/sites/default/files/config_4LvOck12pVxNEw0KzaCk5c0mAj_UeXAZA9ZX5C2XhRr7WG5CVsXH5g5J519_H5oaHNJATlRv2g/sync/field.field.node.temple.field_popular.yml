@@ -1,0 +1,21 @@
+uuid: c862ec12-5220-43ca-b99f-9923ffacd5aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_popular
+    - node.type.temple
+  module:
+    - text
+id: node.temple.field_popular
+field_name: field_popular
+entity_type: node
+bundle: temple
+label: 'Popular For'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

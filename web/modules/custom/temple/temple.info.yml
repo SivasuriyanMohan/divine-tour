@@ -1,0 +1,8 @@
+name: Temple Contribution
+type: module
+description: Custom module for temple submission
+core_version_requirement: ^8 || ^9
+package: Custom
+dependencies:
+  - node
+  - user

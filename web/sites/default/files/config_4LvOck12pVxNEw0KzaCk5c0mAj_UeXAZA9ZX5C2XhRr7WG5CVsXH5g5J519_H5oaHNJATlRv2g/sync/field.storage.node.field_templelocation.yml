@@ -1,0 +1,20 @@
+uuid: e585195f-c2b2-4be8-b1da-791f7e21fe0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_templelocation
+field_name: field_templelocation
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
