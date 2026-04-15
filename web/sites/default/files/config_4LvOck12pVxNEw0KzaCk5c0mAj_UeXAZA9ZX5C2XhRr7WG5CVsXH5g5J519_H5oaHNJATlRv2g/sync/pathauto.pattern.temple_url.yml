@@ -1,0 +1,23 @@
+uuid: 6e0af204-1c4c-4e8c-bb07-13c314a32d50
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: temple_url
+label: 'Temple URL'
+type: 'canonical_entities:node'
+pattern: 'temple/[node:title]'
+selection_criteria:
+  1a58aba1-3e98-4135-964a-aa973daf40c1:
+    id: 'entity_bundle:node'
+    bundles:
+      temple: temple
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1a58aba1-3e98-4135-964a-aa973daf40c1
+selection_logic: and
+weight: -5
+relationships: {  }

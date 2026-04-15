@@ -22,6 +22,7 @@
         "drupal/core-recommended": "^8.8",
         "drupal/facets": "^1.0@dev",
         "drupal/flag": "^4.0@beta",
+        "drupal/pathauto": "^1.10",
         "drupal/webform": "^6.1",
         "drush/drush": "^10.6"
     },
