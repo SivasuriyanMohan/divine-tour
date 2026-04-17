@@ -1,0 +1,26 @@
+uuid: 76fa9bcd-f261-46c2-b2a7-3bc56522eb83
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - temple_testimonials
+  theme:
+    - bartik
+id: templetestimonialsblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: temple_testimonials_block
+settings:
+  id: temple_testimonials_block
+  label: 'Temple Testimonials Block'
+  provider: temple_testimonials
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

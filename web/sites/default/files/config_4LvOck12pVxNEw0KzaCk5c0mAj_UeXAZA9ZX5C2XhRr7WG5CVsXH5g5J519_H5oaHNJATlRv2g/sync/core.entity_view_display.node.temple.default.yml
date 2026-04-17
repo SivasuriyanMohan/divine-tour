@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.temple.body
     - field.field.node.temple.field_address
+    - field.field.node.temple.field_cmt
     - field.field.node.temple.field_images
     - field.field.node.temple.field_popular
     - field.field.node.temple.field_spirituality
@@ -12,6 +14,7 @@ dependencies:
     - field.field.node.temple.field_templelocation
     - node.type.temple
   module:
+    - comment
     - geolocation
     - image
     - layout_builder
@@ -632,7 +635,7 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 8
+            weight: 11
           a39ea605-7919-4ff4-87da-6161b4cf555c:
             uuid: a39ea605-7919-4ff4-87da-6161b4cf555c
             region: content
@@ -648,7 +651,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 5
+            weight: 8
           03323312-320c-4231-99ec-d5d1b39ecaf7:
             uuid: 03323312-320c-4231-99ec-d5d1b39ecaf7
             region: content
@@ -663,7 +666,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: text_default
             additional: {  }
-            weight: 7
+            weight: 10
           69eab36a-8ca0-46e5-911d-f3560ae33581:
             uuid: 69eab36a-8ca0-46e5-911d-f3560ae33581
             region: content
@@ -678,7 +681,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: text_default
             additional: {  }
-            weight: 6
+            weight: 9
           54d8ba0c-94dd-4522-9965-178983a23c88:
             uuid: 54d8ba0c-94dd-4522-9965-178983a23c88
             region: content
@@ -693,7 +696,17 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: 4
+            weight: 7
+          46e18244-b2d5-4ab7-8662-1ca9b7e5cdd7:
+            uuid: 46e18244-b2d5-4ab7-8662-1ca9b7e5cdd7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:temple:content_moderation_control'
+            additional: {  }
+            weight: 6
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section
@@ -726,6 +739,29 @@ third_party_settings:
             additional: {  }
             weight: 0
         third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          bcbc1de7-eeb4-4df9-8237-bc3f610ea625:
+            uuid: bcbc1de7-eeb4-4df9-8237-bc3f610ea625
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:temple:field_cmt'
+              formatter:
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+                type: comment_default
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: node.temple.default
 targetEntityType: node
 bundle: temple
@@ -738,6 +774,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: first
   field_address:
     weight: 105
     label: inline
@@ -745,6 +786,15 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
+  field_cmt:
+    weight: 109
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: first
   field_images:
     weight: 100
     label: hidden

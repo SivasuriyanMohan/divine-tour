@@ -1,0 +1,28 @@
+uuid: 44e7acdb-7416-49d1-8104-15ba16b8a854
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: sitebranding
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Journey to the Soul of the World'
+  provider: system
+  label_display: visible
+  use_site_logo: false
+  use_site_name: false
+  use_site_slogan: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

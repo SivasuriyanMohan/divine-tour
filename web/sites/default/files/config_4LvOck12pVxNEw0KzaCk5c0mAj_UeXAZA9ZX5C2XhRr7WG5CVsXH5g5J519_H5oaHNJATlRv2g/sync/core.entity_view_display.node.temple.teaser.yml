@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.temple.body
     - field.field.node.temple.field_address
+    - field.field.node.temple.field_cmt
     - field.field.node.temple.field_images
     - field.field.node.temple.field_popular
     - field.field.node.temple.field_spirituality
@@ -28,6 +29,11 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   flag_favorite:
     weight: 10
     settings: {  }
@@ -45,6 +51,7 @@ content:
     region: content
 hidden:
   field_address: true
+  field_cmt: true
   field_images: true
   field_popular: true
   field_spirituality: true

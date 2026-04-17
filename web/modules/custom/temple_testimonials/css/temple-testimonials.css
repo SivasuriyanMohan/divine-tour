@@ -1,0 +1,44 @@
+.temple-testimonials-wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.temple-testimonials-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+ 
+.testimonial-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+ 
+.testimonial-comment {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+ 
+.testimonial-meta {
+  font-size: 14px;
+  color: #555;
+}
+ 
+.testimonial-author {
+  display: block;
+  font-weight: bold;
+}
+ 
+.testimonial-temple {
+  display: block;
+  font-size: 13px;
+  color: #888;
+}

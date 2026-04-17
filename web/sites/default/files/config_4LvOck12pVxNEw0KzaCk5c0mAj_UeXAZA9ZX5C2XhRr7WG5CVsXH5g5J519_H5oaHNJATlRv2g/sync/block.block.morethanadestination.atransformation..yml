@@ -1,0 +1,31 @@
+uuid: 22c33ad2-f2c4-4757-b944-ccf06f053c3c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a914533e-27e8-404f-ab27-b069e62b5e29'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: morethanadestination.atransformation.
+theme: bartik
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'block_content:a914533e-27e8-404f-ab27-b069e62b5e29'
+settings:
+  id: 'block_content:a914533e-27e8-404f-ab27-b069e62b5e29'
+  label: ' More Than a Destination. A Transformation.'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

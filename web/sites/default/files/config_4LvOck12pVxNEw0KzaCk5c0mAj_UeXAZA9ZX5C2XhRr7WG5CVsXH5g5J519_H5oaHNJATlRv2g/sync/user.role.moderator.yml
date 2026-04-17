@@ -1,0 +1,15 @@
+uuid: af53d48a-cec2-4f16-b1c5-ae0a7879df0f
+langcode: en
+status: true
+dependencies: {  }
+id: moderator
+label: Moderator
+weight: 2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'use tem transition su'
+  - 'use tem transition unpublished'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'

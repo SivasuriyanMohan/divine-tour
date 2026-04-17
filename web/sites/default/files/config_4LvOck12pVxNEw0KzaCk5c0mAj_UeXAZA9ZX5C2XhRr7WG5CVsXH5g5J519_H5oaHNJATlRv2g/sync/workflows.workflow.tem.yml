@@ -1,0 +1,63 @@
+uuid: 2964bcdd-c1f1-4ce0-9dfe-f63cac0e9e41
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.temple
+  module:
+    - content_moderation
+id: tem
+label: 'Temple Workflow'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 2
+    review:
+      published: false
+      default_revision: true
+      label: Review
+      weight: 1
+  transitions:
+    approve:
+      label: Approve
+      from:
+        - review
+      to: published
+      weight: 3
+    su:
+      label: 'Submit for Review'
+      from:
+        - draft
+      to: review
+      weight: 2
+    un_published:
+      label: UnPublished
+      from:
+        - published
+      to: draft
+      weight: 5
+    unpublished:
+      label: 'Send Back'
+      from:
+        - review
+      to: draft
+      weight: 4
+    update:
+      label: Update
+      from:
+        - published
+      to: published
+      weight: 6
+  entity_types:
+    node:
+      - temple
+  default_moderation_state: draft

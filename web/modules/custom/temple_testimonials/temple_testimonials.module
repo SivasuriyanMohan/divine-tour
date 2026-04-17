@@ -1,0 +1,10 @@
+<?php
+
+function temple_testimonials_theme($existing, $type, $theme, $path) {
+  return [
+    'temple_testimonials' => [
+      'variables' => ['items' => NULL],
+      'template' => 'temple-testimonials',
+    ],
+  ];
+}

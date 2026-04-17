@@ -21,3 +21,4 @@ permissions:
   - 'unflag favorite'
   - 'unflag visited'
   - 'use text format basic_html'
+  - 'view own unpublished content'

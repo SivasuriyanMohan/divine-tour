@@ -1,0 +1,10 @@
+testimonial_slider:
+  version: 1.x
+  css:
+    theme:
+      css/temple-testimonials.css: {}
+  js:
+    js/temple-testimonials.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
