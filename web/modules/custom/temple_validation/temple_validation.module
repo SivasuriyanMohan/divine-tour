@@ -1,0 +1,20 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+ 
+/**
+* Implements hook_entity_presave().
+*/
+function temple_validation_entity_presave(EntityInterface $entity) {
+ 
+  if ($entity->getEntityTypeId() !== 'node') {
+    return;
+  }
+ 
+  if ($entity->bundle() !== 'temple') {
+    return;
+  }
+ 
+  \Drupal::service('temple_validation.duplicate_checker')
+    ->check($entity);
+}

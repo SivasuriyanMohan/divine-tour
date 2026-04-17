@@ -1,0 +1,21 @@
+uuid: b544ae1d-12ec-42b4-ae08-6a428b6dbaa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_templegeolocation
+    - node.type.temple
+  module:
+    - geolocation
+id: node.temple.field_templegeolocation
+field_name: field_templegeolocation
+entity_type: node
+bundle: temple
+label: Geolocation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

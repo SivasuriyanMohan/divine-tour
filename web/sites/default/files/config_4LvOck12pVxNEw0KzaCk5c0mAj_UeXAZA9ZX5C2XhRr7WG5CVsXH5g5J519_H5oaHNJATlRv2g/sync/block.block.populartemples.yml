@@ -1,0 +1,36 @@
+uuid: 4dc32f96-34ed-4b58-b81b-1112ae3f3d8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - temple_popularity
+    - user
+  theme:
+    - bartik
+id: populartemples
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: top_temples_block
+settings:
+  id: top_temples_block
+  label: 'Popular Temples'
+  provider: temple_popularity
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: "/my-favorites\r\n/temple/*\r\n/visited-temples"
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

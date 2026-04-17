@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.temple.field_images
     - field.field.node.temple.field_popular
     - field.field.node.temple.field_spirituality
+    - field.field.node.temple.field_templegeolocation
     - field.field.node.temple.field_templelocation
     - node.type.temple
   module:
@@ -27,6 +28,16 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  flag_favorite:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  flag_visited:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -37,4 +48,5 @@ hidden:
   field_images: true
   field_popular: true
   field_spirituality: true
+  field_templegeolocation: true
   field_templelocation: true

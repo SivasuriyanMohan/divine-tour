@@ -1,0 +1,3 @@
+services:
+  temple_validation.duplicate_checker:
+    class: Drupal\temple_validation\Service\DuplicateChecker

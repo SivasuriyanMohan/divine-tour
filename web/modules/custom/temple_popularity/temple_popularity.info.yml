@@ -1,0 +1,9 @@
+name: Temple Popularity 
+type: module
+description: Provides a block that displays the most popular temples based on user ratings and reviews.
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+
+dependencies:
+  - node
+  - flag
