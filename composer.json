@@ -24,7 +24,10 @@
         "drupal/facets": "^1.0@dev",
         "drupal/flag": "^4.0@beta",
         "drupal/geolocation": "^3.8",
+        "drupal/menu_item_role_access": "^2.1",
+        "drupal/menu_items_visibility": "^1.1",
         "drupal/pathauto": "^1.10",
+        "drupal/superfish": "^1.7",
         "drupal/webform": "^6.1",
         "drush/drush": "^10.6"
     },

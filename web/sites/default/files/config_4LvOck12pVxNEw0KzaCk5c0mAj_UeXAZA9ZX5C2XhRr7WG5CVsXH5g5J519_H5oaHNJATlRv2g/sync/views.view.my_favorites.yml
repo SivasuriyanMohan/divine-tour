@@ -263,11 +263,12 @@ display:
         type: normal
         title: Favorite
         description: ''
-        expanded: false
-        parent: ''
+        expanded: true
+        parent: 'menu_link_content:58cd5668-2875-4c63-b4bc-fd379549a6a3'
         weight: 0
         context: '0'
         menu_name: main
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:

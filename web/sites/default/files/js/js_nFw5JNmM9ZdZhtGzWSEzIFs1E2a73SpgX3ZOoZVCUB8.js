@@ -21,4 +21,4 @@
       setInterval(showNextSlide, 3000);
     }
   };
-})(Drupal);
+})(Drupal);;

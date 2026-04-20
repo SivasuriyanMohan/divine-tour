@@ -7,10 +7,8 @@
       const items = slider.children;
       
       if(items.length <=1) return;
-
       if(slider.dataset.initialized) return; // Prevent multiple initializations
       slider.dataset.initialized = true;
-      
       let index = 0;
  
       function showNextSlide() {
@@ -21,4 +19,4 @@
       setInterval(showNextSlide, 3000);
     }
   };
-})(Drupal);
+})(Drupal);;

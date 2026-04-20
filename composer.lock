@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "364598797850db0e32a8aa30f06e790a",
+    "content-hash": "881d3ef39f0081cf7b2b65f99184cf94",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2450,6 +2450,105 @@
             }
         },
         {
+            "name": "drupal/menu_item_role_access",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_item_role_access.git",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_item_role_access-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "39af3acd1a0e3459d1b654b0641ca68dc82315b0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1669907038",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "liampower",
+                    "homepage": "https://www.drupal.org/user/3016225"
+                },
+                {
+                    "name": "littlepixiez",
+                    "homepage": "https://www.drupal.org/user/2568718"
+                }
+            ],
+            "description": "Provide role based access to menu items.",
+            "homepage": "https://www.drupal.org/project/menu_item_role_access",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_item_role_access"
+            }
+        },
+        {
+            "name": "drupal/menu_items_visibility",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_items_visibility.git",
+                "reference": "1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_items_visibility-1.1.0.zip",
+                "reference": "1.1.0",
+                "shasum": "c224b8cfd9ef75cb09e4f288490a18c8d4b0fe99"
+            },
+            "require": {
+                "drupal/core": ">=8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.0",
+                    "datestamp": "1643798636",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Rajeshreeputra Pravin Dhondiba Gaikwad",
+                    "homepage": "https://www.drupal.org/u/Rajeshreeputra",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Ganesh Suryawanshi",
+                    "homepage": "hhttps://www.drupal.org/u/ganeshsurya11",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "This module exposes configurable and extendable visibility settings for menu links.",
+            "homepage": "https://www.drupal.org/project/menu_items_visibility",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_items_visibility",
+                "issues": "https://www.drupal.org/project/issues/menu_items_visibility"
+            }
+        },
+        {
             "name": "drupal/pathauto",
             "version": "1.10.0",
             "source": {
@@ -2523,6 +2622,68 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/superfish",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/superfish.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/superfish-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "76168fb2c576113380e4867a2e823eb67ba74b9f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "lobsterr/drupal-superfish": "~2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1696891393",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mehrpadin",
+                    "homepage": "https://www.drupal.org/u/mehrpadin",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Nikolay Lobachev",
+                    "homepage": "https://www.drupal.org/u/lobsterr",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Nick Dickinson-Wilde",
+                    "homepage": "https://www.drupal.org/u/nickdickinsonwilde",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Andrei Ivnitskii",
+                    "homepage": "https://www.drupal.org/u/ivnish",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds jQuery Superfish plugin to menu blocks.",
+            "homepage": "https://www.drupal.org/project/superfish",
+            "support": {
+                "source": "https://cgit.drupalcode.org/superfish",
+                "issues": "https://www.drupal.org/project/superfish"
             }
         },
         {
@@ -3702,6 +3863,49 @@
                 }
             ],
             "time": "2021-02-22T09:20:06+00:00"
+        },
+        {
+            "name": "lobsterr/drupal-superfish",
+            "version": "2.3.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LOBsTerr/drupal-superfish.git",
+                "reference": "618cb095efa3c95ae64c34f626dda6c3a642bfac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LOBsTerr/drupal-superfish/zipball/618cb095efa3c95ae64c34f626dda6c3a642bfac",
+                "reference": "618cb095efa3c95ae64c34f626dda6c3a642bfac",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolay Lobachev",
+                    "homepage": "https://www.drupal.org/u/lobsterr",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mehrpadin",
+                    "homepage": "https://www.drupal.org/u/mehrpadin",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Superfish library for the Drupal Superfish module.",
+            "homepage": "https://github.com/LOBsTerr/drupal-superfish",
+            "keywords": [
+                "jquery",
+                "plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/LOBsTerr/drupal-superfish/issues",
+                "source": "https://github.com/LOBsTerr/drupal-superfish"
+            },
+            "time": "2025-05-28T08:48:57+00:00"
         },
         {
             "name": "masterminds/html5",
